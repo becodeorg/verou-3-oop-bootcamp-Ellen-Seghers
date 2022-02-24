@@ -8,7 +8,7 @@ $priceApples = 1.5;
 $numberBottlesOfWine = 2;
 $priceBottleOfWine = 10;
 
-//Calculate the total price
+//Calculate total net price
 $netPriceBananas = $numberBananas * $priceBananas;
 $netPriceApples = $numberApples * $priceApples;
 $netPriceWine = $numberBottlesOfWine * $priceBottleOfWine;
@@ -21,5 +21,8 @@ $fruitTax = 6/100;
 $wineTax = 21/100;
 
 $totalTax = $netPriceBananas * $fruitTax + $netPriceApples * $fruitTax + $netPriceWine * $wineTax;
+
+//Calculate the total price
+$total = $totalTax + $totalNet;
 
 ?>
