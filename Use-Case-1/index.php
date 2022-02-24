@@ -1,17 +1,25 @@
 <?php
 
 //Create the variabele for banana's, apple's and bottles of wine
-$numberBanana = 6;
-$priceBanana = 1;
-$numberApple = 3;
-$priceApple = 1.5;
+$numberBananas = 6;
+$priceBananas = 1;
+$numberApples = 3;
+$priceApples = 1.5;
 $numberBottlesOfWine = 2;
 $priceBottleOfWine = 10;
 
 //Calculate the total price
-$total = $numberBanana * $priceBanana + $numberApple * $priceApple + $numberBottlesOfWine * $priceBottleOfWine;
+$netPriceBananas = $numberBananas * $priceBananas;
+$netPriceApples = $numberApples * $priceApples;
+$netPriceWine = $numberBottlesOfWine * $priceBottleOfWine;
 
+$totalNet = $netPriceBananas + $netPriceApples + $netPriceWine;
 
+//Calculate how much of the total price is tax
+//(fruit goes at 6%, wine is 21%)
+$fruitTax = 6/100;
+$wineTax = 21/100;
 
+$totalTax = $netPriceBananas * $fruitTax + $netPriceApples * $fruitTax + $netPriceWine * $wineTax;
 
 ?>
