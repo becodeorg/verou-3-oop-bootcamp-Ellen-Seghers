@@ -9,9 +9,7 @@ $numberBottlesOfWine = 2;
 $priceBottleOfWine = 10;
 
 //Calculate the total price
-$total = $numberBanana * $priceBanana;
-$total = $numberApple * $priceApple;
-$total = $numberBottlesOfWine * $priceBottleOfWine;
+$total = $numberBanana * $priceBanana + $numberApple * $priceApple + $numberBottlesOfWine * $priceBottleOfWine;
 
 
 
